@@ -1,4 +1,6 @@
 
+[Ubuntu wiki: pspice, orcad, ..., geda](https://wiki.ubuntu.com/From_PSpice_to_ngspice-gEDA)
+
 reset gEDA/gschem/guile)
 ```bash
 # rm -r /home/darren/.cache/guile
@@ -6,7 +8,7 @@ rm -r /home/darren/.gEDA
 rm -r /home/darren/.config/gEDA
 ```
 
-backends
+[gnetlist](http://wiki.geda-project.org/geda:faq-gnetlist) backends
 * [Makefile](./Makefile)
 * [verilog](http://wiki.geda-project.org/geda:verilog_netlister_readme)
 * others
