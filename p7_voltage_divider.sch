@@ -7,7 +7,7 @@ device=RESISTOR
 T 49100 44700 5 10 1 1 0 0 1
 refdes=R1
 T 49600 44700 5 10 1 1 0 0 1
-value=1
+value=0.1
 }
 C 48500 42300 1 0 0 voltage-3.sym
 {
@@ -29,9 +29,9 @@ T 48650 43700 5 10 1 1 0 0 1
 refdes=X1
 T 49300 44300 5 10 0 1 0 0 1
 device=VARIABLE_RESISTOR
-T 47300 43500 5 10 1 1 0 0 1
-model-name=Rheostat
-T 47300 43700 5 10 1 1 0 0 1
+T 48600 43200 5 10 1 1 0 0 1
+model-name=Rheostat rsum=2
+T 47300 43700 5 10 0 1 0 0 1
 file=p7_rheostat.cir
 }
 C 50500 44200 1 0 0 spice-directive-1.sym

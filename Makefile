@@ -17,14 +17,14 @@ p7_voltage_divider.run:
 %.run: # %.sch.cir
 # 	touch -- $@
 	@echo
-	$(MAKE) clean
-	$(MAKE) $(patsubst %.run,%.sch.cir,$@)
+	$(MAKE) -B $(patsubst %.run,%.sch.cir,$@)
 	echo
 	ngspice -- $(patsubst %.run,%.sch.cir,$@)
 
 # .PHONY:%.sch.cir
 # .PRECIOUS: %.sch.cir
 %.sch.cir: # %.sch
+# 	$(MAKE) clean
 	@echo
 	gnetlist    -g spice-sdb -o $@ -- $(basename $@)
 # 	gnetlist    -g spice-sdb -o $@ -- $^

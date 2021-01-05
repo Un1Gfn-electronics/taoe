@@ -1,6 +1,6 @@
 * Rheostat, 2ohm total resistance
 
-.SUBCKT Rheostat left right up
-B1 left  up I=V(left ,up)/(2*V(v_r))
-B2 right up I=V(right,up)/(2*(1-V(v_r)))
-.ENDS
+.subckt Rheostat left right up rsum=999k
+B1 left  up I=V(left ,up)/(rsum*V(v_r))
+B2 right up I=V(right,up)/(rsum*(1-V(v_r)))
+.ends
