@@ -1,0 +1,58 @@
+v 20191008 2
+C 40000 40000 0 0 0 title-B.sym
+C 49000 44400 1 0 0 resistor-2.sym
+{
+T 49400 44750 5 10 0 0 0 0 1
+device=RESISTOR
+T 49100 44700 5 10 1 1 0 0 1
+refdes=R1
+T 49600 44700 5 10 1 1 0 0 1
+value=1
+}
+C 48500 42300 1 0 0 voltage-3.sym
+{
+T 48700 43000 5 8 0 0 0 0 1
+device=VOLTAGE_SOURCE
+T 48700 42800 5 10 1 1 0 0 1
+refdes=V1
+T 49100 42800 5 10 1 1 0 0 1
+value=5
+}
+N 48500 42500 48500 43500 4
+{
+T 48400 43150 5 10 1 1 180 0 1
+netname=y
+}
+C 48500 43400 1 0 0 resistor-variable-2.sym
+{
+T 48650 43700 5 10 1 1 0 0 1
+refdes=X1
+T 49300 44300 5 10 0 1 0 0 1
+device=VARIABLE_RESISTOR
+T 47300 43500 5 10 1 1 0 0 1
+model-name=Rheostat
+T 47300 43700 5 10 1 1 0 0 1
+file=p7_rheostat.cir
+}
+C 50500 44200 1 0 0 spice-directive-1.sym
+{
+T 50600 44500 5 10 0 1 0 0 1
+device=directive
+T 50600 44600 5 10 1 1 0 0 1
+refdes=A1
+T 50500 44200 5 10 1 1 0 0 1
+file=p7_voltage_divider.cmd
+}
+N 49000 43700 49000 45000 4
+{
+T 49000 45250 5 10 1 1 180 0 1
+netname=x
+}
+N 49400 42500 50000 42500 4
+N 49400 43500 50000 43500 4
+N 49900 44500 50000 44500 4
+N 50000 42500 50000 45000 4
+{
+T 50000 45250 5 10 1 1 180 0 1
+netname=0
+}

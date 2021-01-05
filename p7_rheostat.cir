@@ -1,0 +1,6 @@
+* Rheostat, 2ohm total resistance
+
+.SUBCKT Rheostat left right up
+Rleft  left  up r={2*factor}
+Rright right up r={2*(1-factor)}
+.ENDS
