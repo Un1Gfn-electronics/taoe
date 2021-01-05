@@ -1,20 +1,11 @@
-.param factor=0.5
+.GLOBAL v_r
+
+Vctrl v_r 0
 
 .control
 
-  compose fs start=0.01 stop=0.99 step=0.01
-  let     xs=vector(99)
-
-  let i=0
-  foreach f $&fs
-    alterparam factor=$f
-    reset
-    op
-    print x
-    let xs[i]=x
-    let i=i+1
-  end
-  plot xs vs fs
+  dc Vctrl 0.01 0.99 0.01
+  plot x vs v_r
 
   echo
 
