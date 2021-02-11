@@ -1,0 +1,7 @@
+* Load
+* R=V(ctrl,0)*1
+* I=V/R
+
+.subckt Load l r
+G1 l r cur='V(l,r)/V(ctrl)'
+.ends

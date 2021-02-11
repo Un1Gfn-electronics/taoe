@@ -1,7 +1,7 @@
 # '/' = '/home/darren/ngspice/04__sch/'
 
 # *.sch.cir -    Generated     - Remove
-#   *.cir   - Manually created - Keep
+#     *.cir - Manually created - Keep
 
 /\#*.sch#
 /*.sch~

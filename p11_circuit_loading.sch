@@ -1,0 +1,58 @@
+v 20191008 2
+C 40000 40000 0 0 0 title-B.sym
+C 46700 44400 1 0 0 resistor-1.sym
+{
+T 47000 44800 5 10 0 0 0 0 1
+device=RESISTOR
+T 46800 44700 5 10 1 1 0 0 1
+refdes=Rinternal
+T 46800 44200 5 10 1 0 0 0 1
+value={Ri}
+}
+C 48100 44300 1 0 0 voltage-3.sym
+{
+T 48300 45000 5 8 0 0 0 0 1
+device=VOLTAGE_SOURCE
+T 48400 44800 5 10 1 1 0 0 1
+refdes=Vth
+T 48200 44100 5 10 1 0 0 0 1
+value=1
+}
+N 49000 43800 49000 46000 4
+{
+T 49100 43650 5 10 1 1 180 0 1
+netname=0
+}
+N 47600 44500 48100 44500 4
+N 46700 45400 48100 45400 4
+N 46700 44500 46700 45400 4
+N 48100 45400 48100 46000 4
+{
+T 48300 46250 5 10 1 1 180 0 1
+netname=Vout
+}
+N 48100 44500 48100 43800 4
+{
+T 47800 43650 5 10 1 1 180 6 1
+netname=Vopen
+}
+C 49400 45100 1 0 0 spice-directive-1.sym
+{
+T 49500 45400 5 10 0 1 0 0 1
+device=directive
+T 49500 45500 5 10 1 1 0 0 1
+refdes=A1
+T 49400 45200 14 10 1 1 0 0 1
+file=p11_circuit_loading.cmd
+}
+C 48100 45300 1 0 0 resistor-1.sym
+{
+T 48400 45700 5 10 0 0 0 0 1
+device=RESISTOR
+T 48200 45600 5 10 1 1 0 0 1
+refdes=X1
+T 48500 45600 14 10 1 1 0 0 1
+model-name=Load
+T 47900 45100 14 10 1 1 0 0 1
+file=p11_load.cir
+}
