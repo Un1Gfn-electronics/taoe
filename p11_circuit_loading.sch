@@ -1,4 +1,4 @@
-v 20191008 2
+v 20201211 2
 C 40000 40000 0 0 0 title-B.sym
 C 46700 44400 1 0 0 resistor-1.sym
 {
@@ -48,7 +48,7 @@ file=p11_circuit_loading.cmd
 C 48100 45300 1 0 0 resistor-1.sym
 {
 T 48400 45700 5 10 0 0 0 0 1
-device=RESISTOR
+device=LOAD
 T 48200 45600 5 10 1 1 0 0 1
 refdes=X1
 T 48500 45600 14 10 1 1 0 0 1

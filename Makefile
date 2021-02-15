@@ -7,7 +7,7 @@ clean:
 
 digi.v:
 %.v:%.sch
-	gnetlist -v -p verilog -o $@ -- $^
+	lepton-netlist -v -p verilog -o $@ -- $^
 
 capacitor.run:
 p7_voltage_divider.run:
@@ -27,8 +27,8 @@ p11_circuit_loading.run:
 %.sch.cir: # %.sch
 # 	$(MAKE) clean
 	@echo
-	gnetlist    -g spice-sdb -o $@ -- $(basename $@)
-# 	gnetlist    -g spice-sdb -o $@ -- $^
-# 	gnetlist -v -p spice-sdb -o $@ -- $^
-# 	gnetlist -v -p spice -o $@ -- $^
-# 	gnetlist -v -p spice-sdb -o - -- $^
+	lepton-netlist    -g spice-sdb -o $@ -- $(basename $@)
+# 	lepton-netlist    -g spice-sdb -o $@ -- $^
+# 	lepton-netlist -v -p spice-sdb -o $@ -- $^
+# 	lepton-netlist -v -p spice -o $@ -- $^
+# 	lepton-netlist -v -p spice-sdb -o - -- $^
