@@ -12,6 +12,7 @@ digi.v:
 capacitor.run:
 p7_voltage_divider.run:
 p11_circuit_loading.run:
+p14_itstoohot.run:
 # /tmp/MSA-2643.run:
 
 # .PHONY:%.run
