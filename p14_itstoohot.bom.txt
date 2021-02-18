@@ -1,0 +1,50 @@
+===General===================
+
+multimeter 萬用表
+
+breadboard 麵包板 免焊萬用電路板
+
+jump wire 飛線 跳線 杜邦線
+
+pin header
+
+===Power Supply==============
+
+https://www.instructables.com/Simple-5V-Breadboard-Power-Supply/
+
+9V (7~35V) wall adapter w/ jack barrel output 交流配接器
+
+breadboard ?.?mm DC barrel jack adapter
+
+===¥20=======================
+
+LM7805 in DC 7~35V out 5V
+
+0.33uF ceramic capacitor 陶瓷電容
+0.1 uF ceramic capacitor 陶瓷電容
+
+500mA fuse
+   1A fuse
+
+green LED C99763 204-10SUGC/S400-A5-L @20mA VF=3.2V
+90(100) resistor 40mW+
+
+===Power Supply Test=========
+
+?
+
+===It's too hot==============
+
+TLC372 comparator 比較器
+
+#103JG1F thermistor 熱敏電阻 25C=10.0k 30C=8.06k 35C=6.53k
+
+10k resistor 電阻
+10k resistor 電阻
+
+8.06k resistor 電阻
+680 resistor 電阻
+
+red LED @5mA VF=1.6V forward voltage 正向/順向/前向電壓
+
+============================
