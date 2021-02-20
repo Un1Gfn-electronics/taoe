@@ -1,3 +1,9 @@
+```bash
+# rename -vno p p0 p?_*
+rename -vo p p0 p?_*
+```
+
+---
 
 [Ubuntu wiki: pspice, orcad, ..., geda](https://wiki.ubuntu.com/From_PSpice_to_ngspice-gEDA)
 

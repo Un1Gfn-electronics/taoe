@@ -10,7 +10,7 @@ digi.v:
 	lepton-netlist -v -p verilog -o $@ -- $^
 
 capacitor.run:
-p7_voltage_divider.run:
+p07_voltage_divider.run:
 p11_circuit_loading.run:
 p14_itstoohot.run:
 # /tmp/MSA-2643.run:
