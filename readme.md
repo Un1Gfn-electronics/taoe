@@ -1,6 +1,9 @@
+https://en.wikibooks.org/wiki/Practical_Electronics
+
 ```bash
 # rename -vno p p0 p?_*
 rename -vo p p0 p?_*
+git add .
 ```
 
 ---

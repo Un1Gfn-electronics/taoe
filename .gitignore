@@ -7,3 +7,9 @@
 /*.sch~
 /*.sch.cir
 /*.v
+
+# KiCAD/Eeschema
+/*-cache.lib
+/*.pro
+/*.sch-bak
+/fp-info-cache

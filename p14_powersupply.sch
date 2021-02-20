@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C1
+U 1 1 60312569
+P 850 1050
+F 0 "C1" H 600 1100 50  0000 L CNN
+F 1 "0.33uF" H 450 1000 50  0000 L CNN
+F 2 "" H 888 900 50  0001 C CNN
+F 3 "~" H 850 1050 50  0001 C CNN
+	1    850  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 60313784
+P 1650 1050
+F 0 "C2" H 1768 1096 50  0000 L CNN
+F 1 "0.1uF" H 1768 1005 50  0000 L CNN
+F 2 "" H 1688 900 50  0001 C CNN
+F 3 "~" H 1650 1050 50  0001 C CNN
+	1    1650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  800  850  800 
+Wire Wire Line
+	850  800  850  900 
+Wire Wire Line
+	1550 800  1650 800 
+Wire Wire Line
+	1650 800  1650 900 
+$Comp
+L pspice:0 #GND0101
+U 1 1 603205EC
+P 1250 1450
+F 0 "#GND0101" H 1250 1350 50  0001 C CNN
+F 1 "0" H 1250 1350 50  0000 C CNN
+F 2 "" H 1250 1450 50  0001 C CNN
+F 3 "~" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 60322339
+P 2150 1300
+F 0 "R1" V 2050 1300 50  0000 C CNN
+F 1 "330" V 2250 1300 50  0000 C CNN
+F 2 "" V 2190 1290 50  0001 C CNN
+F 3 "~" H 2150 1300 50  0001 C CNN
+	1    2150 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  1200 850  1300
+Wire Wire Line
+	850  1300 1250 1300
+Wire Wire Line
+	2300 1300 2400 1300
+Wire Wire Line
+	2400 1200 2400 1300
+Wire Wire Line
+	1650 1200 1650 1300
+Connection ~ 1650 1300
+Wire Wire Line
+	1650 1300 2000 1300
+Wire Wire Line
+	1250 1100 1250 1300
+Connection ~ 1250 1300
+Wire Wire Line
+	1250 1300 1650 1300
+Wire Wire Line
+	1250 1300 1250 1450
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 6030F0E4
+P 1250 800
+F 0 "U1" H 1250 1042 50  0000 C CNN
+F 1 "LM7805" H 1250 951 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1250 1025 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/lm340.pdf" H 1250 750 50  0001 C CNN
+	1    1250 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60315BB2
+P 2400 1050
+F 0 "D1" V 2439 1130 50  0000 L CNN
+F 1 "LED" V 2348 1130 50  0000 L CNN
+F 2 "" H 2400 1050 50  0001 C CNN
+F 3 "~" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1650 800  2400 800 
+Wire Wire Line
+	2400 800  2400 900 
+Connection ~ 1650 800 
+Text GLabel 2650 800  2    50   Input ~ 0
+V5V
+Wire Wire Line
+	2400 800  2650 800 
+Connection ~ 2400 800 
+Text GLabel 1700 2150 0    50   Input ~ 0
+V5V
+$Comp
+L pspice:0 #GND0102
+U 1 1 603377B7
+P 1700 3300
+F 0 "#GND0102" H 1700 3200 50  0001 C CNN
+F 1 "0" V 1700 3150 50  0000 L CNN
+F 2 "" H 1700 3300 50  0001 C CNN
+F 3 "~" H 1700 3300 50  0001 C CNN
+	1    1700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED Dg
+U 1 1 603382CC
+P 2650 2650
+F 0 "Dg" V 2750 2450 50  0000 L CNN
+F 1 "3.2V@20mA " V 2650 2150 50  0000 L CNN
+F 2 "" H 2650 2650 50  0001 C CNN
+F 3 "https://www.everlight.com/file/ProductFile/DLE-0006123%20204-10SUGCS400-A5%20_V3.pdf" V 3200 850 50  0001 C CNN
+F 4 "204-10SUGC/S400-A5" V 2950 2650 50  0000 R CNN "Model"
+F 5 " Green" V 2850 2650 50  0000 R CNN "Color"
+F 6 "C99763" V 3050 2500 50  0000 C CNN "szlcsc"
+	1    2650 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US Rg
+U 1 1 60339357
+P 2650 3050
+F 0 "Rg" H 2500 3100 50  0000 L CNN
+F 1 "90" H 2500 3000 50  0000 L CNN
+F 2 "" V 2690 3040 50  0001 C CNN
+F 3 "~" H 2650 3050 50  0001 C CNN
+	1    2650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2800 2650 2900
+Wire Wire Line
+	2650 3300 2650 3200
+Wire Wire Line
+	1700 2150 2650 2150
+Wire Wire Line
+	2650 2150 2650 2500
+$Comp
+L Device:LED Dx
+U 1 1 60340B10
+P 5900 2650
+F 0 "Dx" V 5939 2730 50  0000 L CNN
+F 1 "3.35V@5mA" V 5848 2730 50  0000 L CNN
+F 2 "" H 5900 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US Rx
+U 1 1 60340C1C
+P 5900 3050
+F 0 "Rx" H 5968 3096 50  0000 L CNN
+F 1 "330" H 5968 3005 50  0000 L CNN
+F 2 "" V 5940 3040 50  0001 C CNN
+F 3 "~" H 5900 3050 50  0001 C CNN
+	1    5900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3300 5900 3200
+Wire Wire Line
+	2650 2150 3700 2150
+Wire Wire Line
+	5900 2150 5900 2500
+Connection ~ 2650 2150
+Connection ~ 2650 3300
+Wire Wire Line
+	1700 3300 2650 3300
+$Comp
+L Device:R_US Rbr
+U 1 1 6034B7FF
+P 3700 3050
+F 0 "Rbr" H 3500 3100 50  0000 L CNN
+F 1 "150" H 3500 3000 50  0000 L CNN
+F 2 "" V 3740 3040 50  0001 C CNN
+F 3 "~" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2150 3700 2500
+Wire Wire Line
+	3700 3200 3700 3300
+Text GLabel 5900 2150 0    50   Input ~ 0
+V5V
+$Comp
+L pspice:0 #GND0103
+U 1 1 6038B4E4
+P 5900 3300
+F 0 "#GND0103" H 5900 3200 50  0001 C CNN
+F 1 "0" V 5900 3150 50  0000 L CNN
+F 2 "" H 5900 3300 50  0001 C CNN
+F 3 "~" H 5900 3300 50  0001 C CNN
+	1    5900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2150 4300 2150
+Wire Wire Line
+	3700 3300 4300 3300
+$Comp
+L Device:LED Dr
+U 1 1 60398002
+P 4300 2650
+F 0 "Dr" V 4400 2500 50  0000 L CNN
+F 1 "2.2V@20mA" V 4300 2150 50  0000 L CNN
+F 2 "" H 4300 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2006301913_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-304S9AD_C568936.pdf" H 4300 2650 50  0001 C CNN
+F 4 "HL-304S9AD" V 4600 2400 50  0000 C CNN "Model"
+F 5 "Red" V 4500 2550 50  0000 C CNN "Color"
+F 6 "C568936" V 4700 2450 50  0000 C CNN "szlcsc"
+	1    4300 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US Rr
+U 1 1 6039800C
+P 4300 3050
+F 0 "Rr" H 4150 3100 50  0000 L CNN
+F 1 "140" H 4100 3000 50  0000 L CNN
+F 2 "" V 4340 3040 50  0001 C CNN
+F 3 "~" H 4300 3050 50  0001 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2800 4300 2900
+Wire Wire Line
+	4300 2150 4300 2500
+Wire Wire Line
+	4300 3200 4300 3300
+Connection ~ 3700 2150
+Connection ~ 3700 3300
+$Comp
+L Device:LED Dbr
+U 1 1 6034B6C3
+P 3700 2650
+F 0 "Dbr" V 3800 2500 50  0000 L CNN
+F 1 "2V@20mA " V 3700 2200 50  0000 L CNN
+F 2 "" H 3700 2650 50  0001 C CNN
+F 3 "https://www.everlight.com/file/ProductFile/DLE-0004831%20204-10SURDS530-A3-L_V3.pdf" H 3700 2650 50  0001 C CNN
+F 4 "204-10SURD/S530-A3-L" V 4000 2150 50  0000 C CNN "Model"
+F 5 "Brilliant Red" V 3900 2400 50  0000 C CNN "Color"
+F 6 "C84774" V 4100 2500 50  0000 C CNN "szlcsc"
+	1    3700 2650
+	0    1    -1   0   
+$EndComp
+Text Notes 3500 1300 0    50   ~ 0
+https://www.instructables.com/Simple-5V-Breadboard-Power-Supply/
+Text Notes 3500 1450 0    50   ~ 0
+https://en.wikipedia.org/wiki/78xx
+Wire Wire Line
+	3700 2800 3700 2900
+Wire Wire Line
+	2650 3300 3700 3300
+Wire Wire Line
+	5900 2800 5900 2900
+Wire Wire Line
+	4300 2150 5400 2150
+Wire Wire Line
+	4300 3300 5400 3300
+$Comp
+L Device:LED Db
+U 1 1 603193F4
+P 5400 2650
+F 0 "Db" V 5500 2500 50  0000 L CNN
+F 1 "3V@20mA" V 5400 2150 50  0000 L CNN
+F 2 "" H 5400 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2006301911_TOGIALED-TJ-L3FYTGCBMCGSFLC6B-A5_C330760.pdf" H 5400 2650 50  0001 C CNN
+F 4 "TJ-L3FYTGCBMCGSFLC6B-A5" V 5700 2100 50  0000 C CNN "Model"
+F 5 "Blue" V 5600 2550 50  0000 C CNN "Color"
+F 6 "C330760" V 5800 2450 50  0000 C CNN "szlcsc"
+	1    5400 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US Rb
+U 1 1 603193FE
+P 5400 3050
+F 0 "Rb" H 5250 3100 50  0000 L CNN
+F 1 "140" H 5200 3000 50  0000 L CNN
+F 2 "" V 5440 3040 50  0001 C CNN
+F 3 "~" H 5400 3050 50  0001 C CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2800 5400 2900
+Wire Wire Line
+	5400 2150 5400 2500
+Wire Wire Line
+	5400 3200 5400 3300
+Connection ~ 4300 2150
+Connection ~ 4300 3300
+$EndSCHEMATC
