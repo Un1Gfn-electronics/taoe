@@ -1,4 +1,5 @@
-================================================================= URL
+===================================================================================== URL
+https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-color-code/
 https://www.instructables.com/Simple-5V-Breadboard-Power-Supply/
 
 ======================================================== Misc
