@@ -94,17 +94,6 @@ Wire Wire Line
 	2000 3600 2400 3600
 Wire Wire Line
 	2000 3500 2000 3600
-$Comp
-L pspice:0 #GND0101
-U 1 1 603205EC
-P 2150 2100
-F 0 "#GND0101" H 2150 2000 50  0001 C CNN
-F 1 "0" H 2150 2000 50  0000 C CNN
-F 2 "" H 2150 2100 50  0001 C CNN
-F 3 "~" H 2150 2100 50  0001 C CNN
-	1    2150 2100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	2800 3100 2800 3200
 Wire Wire Line
@@ -264,22 +253,9 @@ Connection ~ 3550 1100
 Text Notes 3700 4600 0    50   ~ 0
 https://electronics.stackexchange.com/questions/9510/how-do-i-model-an-led-with-spice
 Wire Wire Line
-	2650 2100 2150 2100
+	2650 2100 2300 2100
 Wire Wire Line
 	3550 3100 3650 3100
-$Comp
-L pspice:0 #GND0102
-U 1 1 60338AF7
-P 2400 3700
-F 0 "#GND0102" H 2400 3600 50  0001 C CNN
-F 1 "0" H 2400 3600 50  0000 C CNN
-F 2 "" H 2400 3700 50  0001 C CNN
-F 3 "~" H 2400 3700 50  0001 C CNN
-	1    2400 3700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 3600 2400 3700
 Wire Wire Line
 	2950 2100 3550 2100
 Wire Wire Line
@@ -294,5 +270,44 @@ F 2 "" H 2850 1900 50  0001 L CNN
 F 3 "~" H 2800 2100 50  0001 C CNN
 	1    2800 2100
 	0    1    -1   0   
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 6031ECBB
+P 1600 3100
+F 0 "#PWR?" H 1600 2950 50  0001 C CNN
+F 1 "+9V" V 1615 3228 50  0000 L CNN
+F 2 "" H 1600 3100 50  0001 C CNN
+F 3 "" H 1600 3100 50  0001 C CNN
+	1    1600 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 3100 2000 3100
+Connection ~ 2000 3100
+$Comp
+L power:GND #PWR?
+U 1 1 60323472
+P 1600 3600
+F 0 "#PWR?" H 1600 3350 50  0001 C CNN
+F 1 "GND" V 1605 3472 50  0000 R CNN
+F 2 "" H 1600 3600 50  0001 C CNN
+F 3 "" H 1600 3600 50  0001 C CNN
+	1    1600 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 3600 2000 3600
+Connection ~ 2000 3600
+$Comp
+L power:GND #PWR?
+U 1 1 60324731
+P 2300 2100
+F 0 "#PWR?" H 2300 1850 50  0001 C CNN
+F 1 "GND" V 2305 1972 50  0000 R CNN
+F 2 "" H 2300 2100 50  0001 C CNN
+F 3 "" H 2300 2100 50  0001 C CNN
+	1    2300 2100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
