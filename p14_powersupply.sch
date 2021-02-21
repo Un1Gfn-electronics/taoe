@@ -108,7 +108,7 @@ Text Notes 3700 4300 0    50   ~ 0
 https://www.instructables.com/Simple-5V-Breadboard-Power-Supply/
 Text Notes 3700 4450 0    50   ~ 0
 https://en.wikipedia.org/wiki/78xx
-Text GLabel 2300 1100 0    50   Input ~ 0
+Text GLabel 1900 1100 0    50   Input ~ 0
 V5V
 Wire Wire Line
 	3550 2000 3550 2100
@@ -189,39 +189,6 @@ F 6 "Green" V 5500 1400 50  0000 R CNN "Color"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_US Rr
-U 1 1 6039800C
-P 6400 1850
-F 0 "Rr" H 6250 1900 50  0000 L CNN
-F 1 "140" H 6200 1800 50  0000 L CNN
-F 2 "" V 6440 1840 50  0001 C CNN
-F 3 "~" H 6400 1850 50  0001 C CNN
-	1    6400 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US Rbr
-U 1 1 6034B7FF
-P 4700 1850
-F 0 "Rbr" H 4500 1900 50  0000 L CNN
-F 1 "150" H 4500 1800 50  0000 L CNN
-F 2 "" V 4740 1840 50  0001 C CNN
-F 3 "~" H 4700 1850 50  0001 C CNN
-	1    4700 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US Rg
-U 1 1 60339357
-P 5750 1850
-F 0 "Rg" H 5600 1900 50  0000 L CNN
-F 1 "90" H 5600 1800 50  0000 L CNN
-F 2 "" V 5790 1840 50  0001 C CNN
-F 3 "~" H 5750 1850 50  0001 C CNN
-	1    5750 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED Db
 U 1 1 6032E488
 P 3550 1400
@@ -235,42 +202,31 @@ F 6 "Blue" V 3300 1350 50  0000 R CNN "Color"
 	1    3550 1400
 	0    1    -1   0   
 $EndComp
-$Comp
-L Device:R_US Rb
-U 1 1 603193FE
-P 3550 1850
-F 0 "Rb" H 3400 1900 50  0000 L CNN
-F 1 "100" H 3350 1800 50  0000 L CNN
-F 2 "" V 3590 1840 50  0001 C CNN
-F 3 "~" H 3550 1850 50  0001 C CNN
-	1    3550 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5750 2100 6400 2100
 Connection ~ 3550 2100
 Wire Wire Line
-	2300 1100 3550 1100
+	1900 1100 3550 1100
 Connection ~ 3550 1100
 Text Notes 3700 4600 0    50   ~ 0
 https://electronics.stackexchange.com/questions/9510/how-do-i-model-an-led-with-spice
 Wire Wire Line
-	2650 2100 2300 2100
+	2250 2100 1900 2100
 Wire Wire Line
 	3550 3100 3650 3100
 Wire Wire Line
-	2950 2100 3550 2100
+	2550 2100 3550 2100
 Wire Wire Line
 	3550 2100 4700 2100
 $Comp
 L Device:Polyfuse PPTC1
 U 1 1 6031DE5F
-P 2800 2100
-F 0 "PPTC1" V 2950 2050 50  0000 R CNN
-F 1 "100mA" V 2950 2400 50  0000 R CNN
-F 2 "" H 2850 1900 50  0001 L CNN
-F 3 "~" H 2800 2100 50  0001 C CNN
-	1    2800 2100
+P 2400 2100
+F 0 "PPTC1" V 2550 2050 50  0000 R CNN
+F 1 "100mA" V 2550 2400 50  0000 R CNN
+F 2 "" H 2450 1900 50  0001 L CNN
+F 3 "~" H 2400 2100 50  0001 C CNN
+	1    2400 2100
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -304,12 +260,58 @@ Connection ~ 2000 3600
 $Comp
 L power:GND #PWR?
 U 1 1 60324731
-P 2300 2100
-F 0 "#PWR?" H 2300 1850 50  0001 C CNN
-F 1 "GND" V 2305 1972 50  0000 R CNN
-F 2 "" H 2300 2100 50  0001 C CNN
-F 3 "" H 2300 2100 50  0001 C CNN
-	1    2300 2100
+P 1900 2100
+F 0 "#PWR?" H 1900 1850 50  0001 C CNN
+F 1 "GND" V 1905 1972 50  0000 R CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US Rr
+U 1 1 6039800C
+P 6400 1850
+F 0 "Rr" H 6250 1900 50  0000 L CNN
+F 1 "150(140)" H 6350 1800 50  0000 R CNN
+F 2 "" V 6440 1840 50  0001 R CNN
+F 3 "~" H 6400 1850 50  0001 R CNN
+	1    6400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US Rg
+U 1 1 60339357
+P 5750 1850
+F 0 "Rg" H 5600 1900 50  0000 R CNN
+F 1 "100(90)" H 5650 1800 50  0000 R CNN
+F 2 "" V 5790 1840 50  0001 R CNN
+F 3 "~" H 5750 1850 50  0001 R CNN
+	1    5750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US Rbr
+U 1 1 6034B7FF
+P 4700 1850
+F 0 "Rbr" H 4650 1900 50  0000 R CNN
+F 1 "150" H 4650 1800 50  0000 R CNN
+F 2 "" V 4740 1840 50  0001 R CNN
+F 3 "~" H 4700 1850 50  0001 R CNN
+F 4 "C328689" H 4650 1700 50  0000 R CNN "szlcsc"
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US Rb
+U 1 1 603193FE
+P 3550 1850
+F 0 "Rb" H 3500 1900 50  0000 R CNN
+F 1 "0.04W@100" H 3500 1800 50  0000 R CNN
+F 2 "" V 3590 1840 50  0001 R CNN
+F 3 "~" H 3550 1850 50  0001 R CNN
+F 4 "C328621" H 3500 1700 50  0000 R CNN "szlcsc"
+	1    3550 1850
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
