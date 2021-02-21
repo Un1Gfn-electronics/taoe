@@ -1,3 +1,10 @@
+```bash
+rm -iv *.pdf
+# File -> Plot... -> Page size:   A4
+# File -> Plot... -> Output mode: Black and White
+rename -vo .pdf ."r$(git rev-list --count HEAD)_$(git rev-parse --short HEAD)".pdf *.pdf
+```
+
 https://en.wikibooks.org/wiki/Practical_Electronics
 
 ```bash
