@@ -4,7 +4,7 @@
 #   *.cir   - Manually created - Keep
 clean:
 	@rm -fv *.v *.sch.cir *.run
-	@rm -fv *.pro *.sch-bak fp-info-cache
+	@rm -fv /*-cache.lib *.pro *.sch-bak _autosave-* fp-info-cache
 
 digi.v:
 %.v:%.sch

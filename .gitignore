@@ -12,4 +12,5 @@
 /*-cache.lib
 /*.pro
 /*.sch-bak
+/_autosave-*
 /fp-info-cache

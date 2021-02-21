@@ -1,0 +1,35 @@
+================================================================= URL
+https://www.instructables.com/Simple-5V-Breadboard-Power-Supply/
+
+======================================================== Misc
+9V (7~35V) wall adapter w/ jack barrel output 交流配接器
+breadboard ?.?mm DC barrel jack adapter
+breadboard 麵包板 免焊萬用電路板
+jump wire 飛線 跳線 杜邦線
+multimeter 萬用表
+pin header
+
+=========================================== IC
+LM7805 in DC 7~35V out 5V Linear regulator
+
+================ LED
+3V    20mA 藍
+2V    20mA 艳红
+3.2V  20mA 翠綠
+2.2V  20mA 紅
+3.35V  5mA ?
+
+==== 電阻
+100
+150
+ 90
+140
+330
+
+======= CeramicCapacitor/陶瓷電容
+0.33uF
+0.1 uF
+
+====== PPTC/可復式保險絲/自恢復保險絲/過流保護片
+500mA
+1A

@@ -263,26 +263,15 @@ Wire Wire Line
 Connection ~ 3550 1100
 Text Notes 3700 4600 0    50   ~ 0
 https://electronics.stackexchange.com/questions/9510/how-do-i-model-an-led-with-spice
-$Comp
-L Device:Polyfuse PPTC1
-U 1 1 6031DE5F
-P 2800 2100
-F 0 "PPTC1" V 2950 2000 50  0000 R CNN
-F 1 "100mA" V 2950 2300 50  0000 R CNN
-F 2 "" H 2850 1900 50  0001 L CNN
-F 3 "~" H 2800 2100 50  0001 C CNN
-	1    2800 2100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	2650 2100 2150 2100
 Wire Wire Line
 	3550 2600 3650 2600
 $Comp
-L pspice:0 #GND?
+L pspice:0 #GND0102
 U 1 1 60338AF7
 P 2400 3200
-F 0 "#GND?" H 2400 3100 50  0001 C CNN
+F 0 "#GND0102" H 2400 3100 50  0001 C CNN
 F 1 "0" H 2400 3100 50  0000 C CNN
 F 2 "" H 2400 3200 50  0001 C CNN
 F 3 "~" H 2400 3200 50  0001 C CNN
@@ -295,4 +284,15 @@ Wire Wire Line
 	2950 2100 3550 2100
 Wire Wire Line
 	3550 2100 4700 2100
+$Comp
+L Device:Polyfuse PPTC1
+U 1 1 6031DE5F
+P 2800 2100
+F 0 "PPTC1" V 2950 2050 50  0000 R CNN
+F 1 "100mA" V 2950 2400 50  0000 R CNN
+F 2 "" H 2850 1900 50  0001 L CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
